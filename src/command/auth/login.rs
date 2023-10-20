@@ -1,3 +1,4 @@
+// File: src/command/auth/login.rs
 use crate::{browser::Browser, server::LocalServer};
 use anyhow::Result;
 use clap::Args;

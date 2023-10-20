@@ -1,3 +1,4 @@
+// File: src/command/deployments/logs.rs
 use std::{
     collections::HashSet,
     sync::{

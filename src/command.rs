@@ -1,3 +1,4 @@
+// File: src/command.rs
 pub mod auth;
 pub mod deployments;
 

@@ -1,3 +1,4 @@
+// File: src/browser.rs
 use anyhow::Result;
 use std::net::SocketAddr;
 use urlencoding::encode;

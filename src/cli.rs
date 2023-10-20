@@ -1,3 +1,4 @@
+// File: src/cli.rs
 use crate::command::Command;
 use clap::Parser;
 

@@ -1,3 +1,4 @@
+// File: src/command/deployments/mod.rs
 use anyhow::Result;
 use clap::Subcommand;
 

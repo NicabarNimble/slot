@@ -1,3 +1,4 @@
+// File: src/command/deployments/list.rs
 #![allow(clippy::enum_variant_names)]
 
 use anyhow::Result;

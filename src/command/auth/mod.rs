@@ -1,3 +1,4 @@
+// File: src/command/auth/mod.rs
 use anyhow::Result;
 use clap::Subcommand;
 

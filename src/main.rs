@@ -1,3 +1,4 @@
+// File: src/main.rs
 mod api;
 mod browser;
 mod cli;

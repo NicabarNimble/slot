@@ -1,0 +1,47 @@
+.
+├── Cargo.lock
+├── Cargo.toml
+├── Dockerfile
+├── README.md
+├── schema.json
+├── scripts
+│   ├── clippy.sh
+│   ├── pull_schema.sh
+│   └── rust_fmt.sh
+├── slotup
+│   ├── README.md
+│   ├── install
+│   └── slotup
+├── src
+│   ├── api.rs
+│   ├── browser.rs
+│   ├── cli.rs
+│   ├── command
+│   │   ├── auth
+│   │   │   ├── info.graphql
+│   │   │   ├── info.rs
+│   │   │   ├── login.rs
+│   │   │   └── mod.rs
+│   │   └── deployments
+│   │       ├── create.graphql
+│   │       ├── create.rs
+│   │       ├── describe.graphql
+│   │       ├── describe.rs
+│   │       ├── list.graphql
+│   │       ├── list.rs
+│   │       ├── logs.graphql
+│   │       ├── logs.rs
+│   │       ├── mod.rs
+│   │       └── services
+│   │           ├── katana.rs
+│   │           ├── madara.rs
+│   │           ├── mod.rs
+│   │           └── torii.rs
+│   ├── command.rs
+│   ├── constant.rs
+│   ├── credential.rs
+│   ├── main.rs
+│   └── server.rs
+└── tree.txt
+
+8 directories, 37 files

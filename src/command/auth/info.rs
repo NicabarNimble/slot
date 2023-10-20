@@ -1,3 +1,4 @@
+// File: src/command/auth/info.rs
 use anyhow::Result;
 use clap::Args;
 use graphql_client::{GraphQLQuery, Response};
