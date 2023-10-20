@@ -6,7 +6,6 @@ use graphql_client::{GraphQLQuery, Response};
 use crate::api::ApiClient;
 
 use self::me::{ResponseData, Variables};
-
 #[derive(GraphQLQuery)]
 #[graphql(
     schema_path = "schema.json",
@@ -14,10 +13,8 @@ use self::me::{ResponseData, Variables};
     response_derives = "Debug"
 )]
 pub struct Me;
-
 #[derive(Debug, Args)]
 pub struct InfoArgs {}
-
 impl InfoArgs {
     pub async fn run(&self) -> Result<()> {
         let request_body = Me::build_query(Variables {});

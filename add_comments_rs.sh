@@ -15,11 +15,17 @@ process_files() {
       # If directory, recurse
       process_files "$file"
     elif [[ $file == *.rs ]]; then
-      # If Rust file, check for existing comment and prepend if not found
+      # If Rust file
       local rel_path=${file#"$start_dir"/}  # Get relative path
-      if ! grep -q "// File: $rel_path" "$file"; then
-        echo "// File: $rel_path" | cat - "$file" > temp && mv temp "$file"
-      fi
+      
+      # Remove any existing // File: comments
+      sed -i '' '/^\/\/ File: /d' "$file"
+      
+      # Prepend the correct // File: comment
+      awk -v comment="// File: $rel_path" '
+        BEGIN {print comment}
+        {print}
+      ' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
     fi
   done
 }
