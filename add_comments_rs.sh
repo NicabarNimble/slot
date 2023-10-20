@@ -30,5 +30,5 @@ process_files() {
   done
 }
 
-# Run function from starting directory
+# Run function from starting directory yes
 process_files "$start_dir"
